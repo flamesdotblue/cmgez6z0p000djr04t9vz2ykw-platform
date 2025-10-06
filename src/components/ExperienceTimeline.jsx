@@ -47,7 +47,7 @@ export default function ExperienceTimeline() {
         </div>
 
         <ul className="space-y-10">
-          {items.map((it, idx) => (
+          {items.map((it) => (
             <li key={it.role} className="relative">
               <div className="grid grid-cols-[32px_1fr] items-start gap-4">
                 <div className="relative h-full">

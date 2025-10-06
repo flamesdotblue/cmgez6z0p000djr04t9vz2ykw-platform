@@ -44,7 +44,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="relative aspect-square w-full max-w-md rounded-3xl border border-emerald-900/60 bg-gradient-to-br from-slate-900/80 via-emerald-950/70 to-sky-950/70 p-1 shadow-[0_20px_60px_-30px_rgba(16,185,129,0.45)] md:ml-auto"
+            className="relative aspect-square w/full max-w-md rounded-3xl border border-emerald-900/60 bg-gradient-to-br from-slate-900/80 via-emerald-950/70 to-sky-950/70 p-1 shadow-[0_20px_60px_-30px_rgba(16,185,129,0.45)] md:ml-auto"
           >
             <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_70%_30%,rgba(16,185,129,0.18),transparent_60%),radial-gradient(circle_at_30%_70%,rgba(56,189,248,0.16),transparent_55%)]" />
             <div className="relative flex h-full w-full items-center justify-center rounded-[22px]">
