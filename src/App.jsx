@@ -7,7 +7,6 @@ import ExperienceTimeline from './components/ExperienceTimeline';
 function App() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-sky-100 via-emerald-50 to-amber-50 text-slate-800">
-      {/* Decorative sky elements */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-10 -left-10 h-72 w-72 rounded-full bg-sky-200/60 blur-3xl" />
         <div className="absolute top-20 -right-16 h-80 w-80 rounded-full bg-emerald-200/50 blur-3xl" />
@@ -20,7 +19,6 @@ function App() {
         <ProjectsShowcase />
         <ExperienceTimeline />
 
-        {/* Contact Section */}
         <section id="contact" className="relative py-20">
           <div className="mx-auto max-w-5xl px-6">
             <div className="rounded-3xl border border-emerald-200/60 bg-white/60 p-8 shadow-[0_10px_40px_-20px_rgba(16,185,129,0.4)] backdrop-blur">
