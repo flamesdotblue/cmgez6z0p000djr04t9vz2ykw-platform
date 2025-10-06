@@ -26,13 +26,18 @@ export default function ExperienceTimeline() {
     <section id="experience" className="relative py-16">
       <div className="mx-auto max-w-5xl px-6">
         <h2 className="mb-8 text-3xl font-semibold tracking-tight text-emerald-900">Experience timeline</h2>
-        <div className="relative">
-          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-300 via-emerald-200 to-transparent" />
+        <div className="relative pl-10">
+          {/* Vertical line */}
+          <div className="pointer-events-none absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-300 via-emerald-200 to-transparent" />
+
           <ul className="space-y-8">
-            {items.map((it, idx) => (
-              <li key={it.role} className="relative ml-10">
-                <div className="absolute -left-6 top-1.5 h-3.5 w-3.5 rounded-full bg-emerald-500 ring-4 ring-emerald-200/60" />
-                <div className="rounded-2xl border border-emerald-200/60 bg-white/70 p-5 backdrop-blur">
+            {items.map((it) => (
+              <li key={it.role} className="relative">
+                {/* Dot aligned to the line (centered) */}
+                <div className="absolute left-4 top-5 h-3.5 w-3.5 -translate-x-1/2 transform rounded-full bg-emerald-500 ring-4 ring-emerald-200/60" />
+
+                {/* Card */}
+                <div className="ml-8 rounded-2xl border border-emerald-200/60 bg-white/70 p-5 backdrop-blur">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <div>
                       <h3 className="font-semibold text-emerald-900">{it.role}</h3>
