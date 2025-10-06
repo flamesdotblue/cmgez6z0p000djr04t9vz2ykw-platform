@@ -13,7 +13,7 @@ export default function TechToolkit() {
   return (
     <section id="toolkit" className="relative py-16">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-8 flex items-end justify-between">
+        <div className="mb-8 flex items/end justify-between">
           <h2 className="text-3xl font-semibold tracking-tight text-emerald-900">Tech toolkit</h2>
           <span className="text-sm text-emerald-900/60">crafted with care</span>
         </div>

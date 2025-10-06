@@ -32,7 +32,7 @@ export default function ProjectsShowcase() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((p, i) => (
+          {projects.map((p) => (
             <motion.a
               key={p.title}
               href={p.link}
@@ -51,7 +51,6 @@ export default function ProjectsShowcase() {
                   animate={{ y: [0, -6, 0], opacity: [0.7, 1, 0.7] }}
                   transition={{ duration: 3.5, repeat: Infinity }}
                 />
-                {/* subtle sun */}
                 <div className="absolute left-4 top-4 h-6 w-6 rounded-full bg-amber-300 shadow-inner" />
               </div>
 

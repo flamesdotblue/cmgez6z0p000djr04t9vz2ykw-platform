@@ -26,31 +26,30 @@ export default function ExperienceTimeline() {
     <section id="experience" className="relative py-16">
       <div className="mx-auto max-w-5xl px-6">
         <h2 className="mb-8 text-3xl font-semibold tracking-tight text-emerald-900">Experience timeline</h2>
-        <div className="relative pl-10">
-          {/* Vertical line */}
-          <div className="pointer-events-none absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-300 via-emerald-200 to-transparent" />
 
-          <ul className="space-y-8">
-            {items.map((it) => (
-              <li key={it.role} className="relative">
-                {/* Dot aligned to the line (centered) */}
-                <div className="absolute left-4 top-5 h-3.5 w-3.5 -translate-x-1/2 transform rounded-full bg-emerald-500 ring-4 ring-emerald-200/60" />
+        <ul className="space-y-10">
+          {items.map((it) => (
+            <li key={it.role} className="grid grid-cols-[32px_1fr] items-start gap-4">
+              {/* Rail: line + dot share the same coordinate system */}
+              <div className="relative h-full">
+                <div className="pointer-events-none absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2 bg-gradient-to-b from-emerald-300 via-emerald-200 to-transparent" />
+                <div className="absolute left-1/2 top-6 h-3.5 w-3.5 -translate-x-1/2 rounded-full bg-emerald-500 ring-4 ring-emerald-200/60" />
+              </div>
 
-                {/* Card */}
-                <div className="ml-8 rounded-2xl border border-emerald-200/60 bg-white/70 p-5 backdrop-blur">
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div>
-                      <h3 className="font-semibold text-emerald-900">{it.role}</h3>
-                      <p className="text-sm text-emerald-900/70">{it.org}</p>
-                    </div>
-                    <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800 ring-1 ring-emerald-200">{it.period}</span>
+              {/* Card */}
+              <div className="rounded-2xl border border-emerald-200/60 bg-white/70 p-5 backdrop-blur">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div>
+                    <h3 className="font-semibold text-emerald-900">{it.role}</h3>
+                    <p className="text-sm text-emerald-900/70">{it.org}</p>
                   </div>
-                  <p className="mt-3 text-emerald-900/80">{it.desc}</p>
+                  <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800 ring-1 ring-emerald-200">{it.period}</span>
                 </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+                <p className="mt-3 text-emerald-900/80">{it.desc}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
