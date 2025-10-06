@@ -48,7 +48,6 @@ export default function Hero() {
           >
             <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_70%_30%,rgba(16,185,129,0.15),transparent_60%),radial-gradient(circle_at_30%_70%,rgba(14,165,233,0.15),transparent_55%)]" />
             <div className="relative flex h-full w-full items-center justify-center rounded-[22px]">
-              {/* Friendly floating spirit */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
@@ -63,7 +62,6 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Clouds */}
           <motion.svg
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}

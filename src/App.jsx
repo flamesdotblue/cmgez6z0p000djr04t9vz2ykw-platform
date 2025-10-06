@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './components/Hero';
 import TechToolkit from './components/TechToolkit';
 import ProjectsShowcase from './components/ProjectsShowcase';
-import ExperienceTimeline from './components/ExperienceTimeline';
+import Experience from './components/ExperienceTimeline';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Hero />
         <TechToolkit />
         <ProjectsShowcase />
-        <ExperienceTimeline />
+        <Experience />
 
         <section id="contact" className="relative py-20">
           <div className="mx-auto max-w-5xl px-6">
